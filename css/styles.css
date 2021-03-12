@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  background-color: #000;
+  color: #fff;
+  
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;  
+}
+
+header {
+  background-image: url('../images/header-img.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+h2 {
+  font-family: 'Rye', cursive;  
+  color: red; 
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  color: red;
+  mix-blend-mode: multiply;
+  font-family: 'Rye', cursive;  
+  font-size: 70px;
+  background: rgba(0,0,0,.9);
+  padding: 10px 30px;
+}
+
+main {
+  margin:  20px auto;
+  width: 50vw;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: .9s;
+  font-size: 24px;
+  margin-right: 20px;
+  font-family: 'Oleo Script', cursive;
+}
+
+nav a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+  padding: 5px;
+}
+
+.intro {
+  clear: both;
+  display: block;
+}
+
+.intro img {
+  width: 50vw;
+  max-width: 400px;
+  float: left;
+}
+
+.intro p {
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: left;
+  width: 400px;
+  border-bottom: 5px solid #fff;
+}
+
+.intro p::first-letter {
+  font-family: 'Oleo Script', cursive;
+  font-size: 28px;
+  color: red;
+}
+
+.work {
+  clear: both;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0.3), rgba(0, 0, 0, 0.9)), url('../images/tattoo.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-top: 0;
+  margin-bottom: 40px;  
+  position: relative;
+  top: 20px;
+}
+
+.work p {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -90px;
+  margin-top: -20px;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+.work:hover {
+  cursor: pointer;  
+}
+
+.work:hover p {
+  background-color: rgba(0,0,0,.9);
+}
+
+.team {
+  margin-top: 40px;
+  text-align: center;
+  margin-left: -10px;
+  clear: both;  
+  overflow: hidden;  
+}
+
+.team div {
+  width: 40%;
+  height: 50vh;
+  display: inline-block;
+  position: relative;
+}
+
+.team div p {  
+  font-family: 'Oleo Script', cursive;
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.artist1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/artist.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.artist2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/artist-2.jpg');
+  background-size: cover;
+  background-position: top center;  
+}
+
+footer {
+  background-color: #3e3e3e;
+  width: 100%;
+  clear: both;
+  margin-top: 40px;
+  font-size: 16px;
+  padding: 20px; 	
+}
+
+footer a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    top: 40px;
+    left: 10px;
+    margin: 0;
+  }
+  
+  header {
+    background-position: center;
+  }
+  
+  .intro p {
+    padding-left: 0;
+    width: 50vw;
+  }
+  
+  .intro p::first-letter {
+    font-size: 20px;
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 100vw;
+  }
+  
+  .team div {
+    width: 100%;
+  }
+  
+  .team div p {  
+    margin-left: -40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav a {
+    display: block;
+  }
+  .work {
+    width: 98vw;
+    margin-left: -50%;
+  }
+  
+  .intro p {
+    position: relative;    
+  }
+  
+  .work {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .work p {
+    margin-left: -70px;    
+  }
+  
+  .team {
+    margin:  0 auto;
+    width: 100%;
+  }
+  
+  div.artist2 p {
+    margin-left: -20px;
+  }
+  
+  footer p:first-of-type {
+    margin-left: -20px;
+  }
+}
